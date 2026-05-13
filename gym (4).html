@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Workout Plans</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+    }
+
+    header {
+      background: #111;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .container {
+      width: 90%;
+      margin: auto;
+      padding: 20px 0;
+    }
+
+    .plans {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .card {
+      background: white;
+      width: 300px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      overflow: hidden;
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: scale(1.03);
+    }
+
+    .card h2 {
+      background: #ff6600;
+      color: white;
+      margin: 0;
+      padding: 15px;
+      text-align: center;
+    }
+
+    .card ul {
+      list-style: none;
+      padding: 20px;
+      margin: 0;
+    }
+
+    .card ul li {
+      padding: 10px 0;
+      border-bottom: 1px solid #ddd;
+    }
+
+    .btn {
+      display: block;
+      text-align: center;
+      background: #111;
+      color: white;
+      text-decoration: none;
+      padding: 12px;
+      margin: 15px;
+      border-radius: 5px;
+    }
+
+    .btn:hover {
+      background: #ff6600;
+    }
+
+    footer {
+      background: #111;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>Workout Plans</h1>
+    <p>Choose Your Fitness Goal</p>
+  </header>
+
+  <div class="container">
+
+    <div class="plans">
+
+      <!-- Beginner Plan -->
+      <div class="card">
+        <h2>Beginner Plan</h2>
+
+        <ul>
+          <li>Push-Ups - 10 reps</li>
+          <li>Squats - 15 reps</li>
+          <li>Plank - 30 sec</li>
+          <li>Jumping Jacks - 20 reps</li>
+          <li>Walking - 15 mins</li>
+        </ul>
+
+        <a href="#" class="btn">Start Plan</a>
+      </div>
+
+      <!-- Muscle Gain Plan -->
+      <div class="card">
+        <h2>Muscle Gain</h2>
+
+        <ul>
+          <li>Bench Press - 4 sets</li>
+          <li>Deadlift - 4 sets</li>
+          <li>Pull-Ups - 12 reps</li>
+          <li>Bicep Curls - 15 reps</li>
+          <li>Protein Diet Plan</li>
+        </ul>
+
+        <a href="#" class="btn">Start Plan</a>
+      </div>
+
+      <!-- Weight Loss Plan -->
+      <div class="card">
+        <h2>Weight Loss</h2>
+
+        <ul>
+          <li>Running - 20 mins</li>
+          <li>Burpees - 15 reps</li>
+          <li>Mountain Climbers - 20 reps</li>
+          <li>Skipping - 10 mins</li>
+          <li>Healthy Diet Routine</li>
+        </ul>
+
+        <a href="#" class="btn">Start Plan</a>
+      </div>
+
+    </div>
+
+  </div>
+
+  <footer>
+    <p>© 2026 Fitness Workout Plans</p>
+  </footer>
+
+</body>
+</html>

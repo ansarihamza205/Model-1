@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gym Members - India</title>
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body{
+      background:#f4f4f4;
+    }
+
+    header{
+      background:#111;
+      color:white;
+      text-align:center;
+      padding:20px;
+    }
+
+    nav{
+      background:#222;
+      padding:10px;
+      text-align:center;
+    }
+
+    nav a{
+      color:white;
+      text-decoration:none;
+      margin:0 15px;
+      font-size:18px;
+    }
+
+    nav a:hover{
+      color:orange;
+    }
+
+    .container{
+      width:90%;
+      margin:30px auto;
+      background:white;
+      padding:25px;
+      border-radius:10px;
+      box-shadow:0 0 10px rgba(0,0,0,0.2);
+    }
+
+    h2{
+      text-align:center;
+      margin-bottom:20px;
+      color:#333;
+    }
+
+    table{
+      width:100%;
+      border-collapse:collapse;
+      margin-top:20px;
+    }
+
+    table, th, td{
+      border:1px solid #ccc;
+    }
+
+    th{
+      background:#111;
+      color:white;
+      padding:12px;
+    }
+
+    td{
+      padding:10px;
+      text-align:center;
+    }
+
+    tr:nth-child(even){
+      background:#f9f9f9;
+    }
+
+    .active{
+      color:green;
+      font-weight:bold;
+    }
+
+    .pending{
+      color:red;
+      font-weight:bold;
+    }
+
+    footer{
+      background:#111;
+      color:white;
+      text-align:center;
+      padding:15px;
+      margin-top:30px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>FitLife Gym Members</h1>
+    <p>Indian Gym Member Management System</p>
+  </header>
+
+  <nav>
+    <a href="gym_home.html">Home</a>
+    <a href="#">Members</a>
+    <a href="#">Plans</a>
+    <a href="#">Contact</a>
+  </nav>
+
+  <div class="container">
+
+    <h2>Gym Members List</h2>
+
+    <table>
+
+      <tr>
+        <th>Member ID</th>
+        <th>Name</th>
+        <th>City</th>
+        <th>Plan</th>
+        <th>Phone</th>
+        <th>Status</th>
+      </tr>
+
+      <tr>
+        <td>101</td>
+        <td>Hamza Ansari</td>
+        <td>Ahmedabad</td>
+        <td>Monthly</td>
+        <td>9876543210</td>
+        <td class="active">Active</td>
+      </tr>
+
+      <tr>
+        <td>102</td>
+        <td>Rahul Sharma</td>
+        <td>Mumbai</td>
+        <td>Yearly</td>
+        <td>9876501234</td>
+        <td class="active">Active</td>
+      </tr>
+
+      <tr>
+        <td>103</td>
+        <td>Ayaan Khan</td>
+        <td>Delhi</td>
+        <td>Quarterly</td>
+        <td>9988776655</td>
+        <td class="pending">Pending</td>
+      </tr>
+
+      <tr>
+        <td>104</td>
+        <td>Priya Patel</td>
+        <td>Surat</td>
+        <td>Monthly</td>
+        <td>9123456780</td>
+        <td class="active">Active</td>
+      </tr>
+
+      <tr>
+        <td>105</td>
+        <td>Arjun Mehta</td>
+        <td>Pune</td>
+        <td>Yearly</td>
+        <td>9012345678</td>
+        <td class="active">Active</td>
+      </tr>
+
+    </table>
+
+  </div>
+
+  <footer>
+    <p>© 2026 FitLife Gym India | All Rights Reserved</p>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gym Personal Trainers</title>
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body{
+      background:#f4f4f4;
+    }
+
+    header{
+      background:#111;
+      color:white;
+      text-align:center;
+      padding:25px;
+    }
+
+    header h1{
+      font-size:40px;
+    }
+
+    .trainer-section{
+      display:flex;
+      justify-content:center;
+      gap:25px;
+      flex-wrap:wrap;
+      padding:40px;
+    }
+
+    .trainer-card{
+      background:white;
+      width:280px;
+      padding:25px;
+      border-radius:10px;
+      text-align:center;
+      box-shadow:0 4px 10px rgba(0,0,0,0.2);
+      transition:0.3s;
+    }
+
+    .trainer-card:hover{
+      transform:translateY(-8px);
+    }
+
+    .trainer-name{
+      font-size:28px;
+      color:#222;
+      margin-bottom:10px;
+    }
+
+    .trainer-role{
+      color:#666;
+      margin-bottom:15px;
+    }
+
+    .trainer-exp{
+      margin-bottom:20px;
+      color:#444;
+    }
+
+    .btn{
+      display:inline-block;
+      padding:10px 20px;
+      background:#ff6600;
+      color:white;
+      text-decoration:none;
+      border-radius:5px;
+    }
+
+    .btn:hover{
+      background:#cc5200;
+    }
+
+    footer{
+      background:#111;
+      color:white;
+      text-align:center;
+      padding:15px;
+      margin-top:30px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>Our Personal Trainers</h1>
+    <p>Professional trainers for your fitness journey</p>
+  </header>
+
+  <section class="trainer-section">
+
+    <div class="trainer-card">
+      <div class="trainer-name">Rahul Sharma</div>
+      <div class="trainer-role">Bodybuilding Expert</div>
+      <div class="trainer-exp">Experience: 5 Years</div>
+      <a href="#" class="btn">Book Now</a>
+    </div>
+
+    <div class="trainer-card">
+      <div class="trainer-name">Aman Verma</div>
+      <div class="trainer-role">Strength Coach</div>
+      <div class="trainer-exp">Experience: 4 Years</div>
+      <a href="#" class="btn">Book Now</a>
+    </div>
+
+    <div class="trainer-card">
+      <div class="trainer-name">Priya Patel</div>
+      <div class="trainer-role">Yoga Trainer</div>
+      <div class="trainer-exp">Experience: 6 Years</div>
+      <a href="#" class="btn">Book Now</a>
+    </div>
+
+  </section>
+
+  <footer>
+    <p>© 2026 Power Gym | All Rights Reserved</p>
+  </footer>
+
+</body>
+</html>

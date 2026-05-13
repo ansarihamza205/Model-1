@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+  <title>Gym Management</title>
+
+  <style>
+    {
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body{
+      background:#f4f4f4;
+    }
+
+    header{
+      background:#111;
+      color:white;
+      padding:20px;
+      text-align:center;
+    }
+
+    nav{
+      background:#222;
+      padding:10px;
+      text-align:center;
+    }
+
+    nav a{
+      color:white;
+      text-decoration:none;
+      margin:0 15px;
+      font-size:18px;
+    }
+
+    nav a:hover{
+      color:orange;
+    }
+
+    .hero{
+      height:400px;
+      background:url('https://images.unsplash.com/photo-1517836357463-d25dfeac3438?q=80&w=1200&auto=format&fit=crop') no-repeat center center/cover;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      color:white;
+      text-align:center;
+    }
+
+    .hero h1{
+      font-size:50px;
+      background:rgba(0,0,0,0.6);
+      padding:20px;
+      border-radius:10px;
+    }
+
+    .container{
+      padding:40px;
+      text-align:center;
+    }
+
+    .cards{
+      display:flex;
+      justify-content:center;
+      gap:20px;
+      flex-wrap:wrap;
+      margin-top:30px;
+    }
+
+    .card{
+      background:white;
+      width:250px;
+      padding:20px;
+      border-radius:10px;
+      box-shadow:0 0 10px rgba(0,0,0,0.2);
+    }
+
+    .card h3{
+      margin-bottom:15px;
+      color:#333;
+    }
+
+    .card p{
+      color:#666;
+    }
+
+    footer{
+      background:#111;
+      color:white;
+      text-align:center;
+      padding:15px;
+      margin-top:30px;
+    }
+
+    button{
+      margin-top:15px;
+      padding:10px 20px;
+      border:none;
+      background:orange;
+      color:white;
+      border-radius:5px;
+      cursor:pointer;
+      font-size:16px;
+    }
+
+    button:hover{
+      background:darkorange;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>FitLife Gym Management</h1>
+    <p>Your Fitness Journey Starts Here</p>
+  </header>
+
+  <nav>
+    <a href="#">Home</a>
+   <a href="gym_member.html">Members</a>
+    <a href="gym_treiner.html">Trainers</a>
+    <a href="gym_plans.html">Plans</a>
+    <a href="gym_contect.html">Contact</a>
+  </nav>
+
+  <section class="hero">
+    <h1>Welcome to Our Gym</h1>
+  </section>
+
+  <div class="container">
+    <h2>Our Services</h2>
+
+    <div class="cards">
+
+      <div class="card">
+        <h3>Membership</h3>
+        <p>Manage gym memberships easily and quickly.</p>
+        <a href="gym_membership.html">
+  <button>Join Now</button>
+</a>
+      </div>
+
+      <div class="card">
+        <h3>Personal Trainers</h3>
+        <p>Get guidance from professional fitness trainers.</p>
+        <a href="persounal.html">
+        <button>View Trainers</button>
+        </a>
+      </div>
+
+      <div class="card">
+        <h3>Workout Plans</h3>
+        <p>Customized workout plans for your fitness goals.</p>
+        <a href="gym_workout_plans.html">
+        <button>Explore</button>
+        </a>
+      </div>
+
+    </div>
+  </div>
+
+  <footer>
+    <p> 2026 FitLife Gym Management | All Rights Reserved</p>
+  </footer>
+
+</body>
+</html>

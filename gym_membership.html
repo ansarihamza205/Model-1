@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gym Membership Management</title>
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body{
+      background:#f4f4f4;
+    }
+
+    header{
+      background:#111;
+      color:white;
+      text-align:center;
+      padding:20px;
+    }
+
+    .container{
+      width:90%;
+      max-width:600px;
+      margin:30px auto;
+      background:white;
+      padding:30px;
+      border-radius:10px;
+      box-shadow:0 0 10px rgba(0,0,0,0.2);
+    }
+
+    h2{
+      text-align:center;
+      margin-bottom:20px;
+      color:#333;
+    }
+
+    form label{
+      font-weight:bold;
+      display:block;
+      margin-top:15px;
+    }
+
+    form input,
+    form select{
+      width:100%;
+      padding:10px;
+      margin-top:5px;
+      border:1px solid #ccc;
+      border-radius:5px;
+    }
+
+    button{
+      width:100%;
+      padding:12px;
+      margin-top:20px;
+      border:none;
+      background:orange;
+      color:white;
+      font-size:18px;
+      border-radius:5px;
+      cursor:pointer;
+    }
+
+    button:hover{
+      background:darkorange;
+    }
+
+    table{
+      width:100%;
+      margin-top:30px;
+      border-collapse:collapse;
+    }
+
+    table, th, td{
+      border:1px solid #ccc;
+    }
+
+    th{
+      background:#111;
+      color:white;
+      padding:10px;
+    }
+
+    td{
+      padding:10px;
+      text-align:center;
+    }
+
+    footer{
+      text-align:center;
+      background:#111;
+      color:white;
+      padding:15px;
+      margin-top:30px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>Gym Membership Management</h1>
+    <p>Manage gym memberships easily and quickly</p>
+  </header>
+
+  <div class="container">
+
+    <h2>Membership Form</h2>
+
+    <form>
+      
+      <label>Full Name</label>
+      <input type="text" placeholder="Enter member name" required>
+
+      <label>Email</label>
+      <input type="email" placeholder="Enter email" required>
+
+      <label>Phone Number</label>
+      <input type="tel" placeholder="Enter phone number" required>
+
+      <label>Membership Plan</label>
+      <select required>
+        <option value="">Select Plan</option>
+        <option>Monthly</option>
+        <option>Quarterly</option>
+        <option>Yearly</option>
+      </select>
+
+      <label>Joining Date</label>
+      <input type="date" required>
+
+      <button type="submit">Add Member</button>
+
+    </form>
+
+    <table>
+      <tr>
+        <th>Name</th>
+        <th>Plan</th>
+        <th>Status</th>
+      </tr>
+
+      <tr>
+        <td>Hamza</td>
+        <td>Monthly</td>
+        <td>Active</td>
+      </tr>
+
+      <tr>
+        <td>Ali</td>
+        <td>Yearly</td>
+        <td>Active</td>
+      </tr>
+    </table>
+
+  </div>
+
+  <footer>
+    <p>© 2026 Gym Management System</p>
+  </footer>
+
+</body>
+</html>
