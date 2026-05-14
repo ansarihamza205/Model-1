@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hamza Gym Order History</title>
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body{
+      background:#f4f4f4;
+      padding:40px;
+    }
+
+    .container{
+      max-width:1000px;
+      margin:auto;
+      background:white;
+      padding:30px;
+      border-radius:15px;
+      box-shadow:0 0 10px rgba(0,0,0,0.2);
+    }
+
+    h1{
+      text-align:center;
+      color:#ff4500;
+      margin-bottom:30px;
+    }
+
+    table{
+      width:100%;
+      border-collapse:collapse;
+    }
+
+    table th{
+      background:#111;
+      color:white;
+      padding:15px;
+      text-align:center;
+    }
+
+    table td{
+      padding:15px;
+      text-align:center;
+      border-bottom:1px solid #ccc;
+    }
+
+    tr:hover{
+      background:#f9f9f9;
+    }
+
+    .paid{
+      color:green;
+      font-weight:bold;
+    }
+
+    .pending{
+      color:orange;
+      font-weight:bold;
+    }
+
+    .failed{
+      color:red;
+      font-weight:bold;
+    }
+
+    .back-btn{
+      display:inline-block;
+      margin-top:20px;
+      padding:12px 20px;
+      background:#ff4500;
+      color:white;
+      text-decoration:none;
+      border-radius:5px;
+      transition:0.3s;
+    }
+
+    .back-btn:hover{
+      background:#e03e00;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+    <h1>Hamza Gym Order History</h1>
+
+    <table>
+      <tr>
+        <th>Order ID</th>
+        <th>Membership Plan</th>
+        <th>Date</th>
+        <th>Amount</th>
+        <th>Payment Status</th>
+      </tr>
+
+      <tr>
+        <td>HG101</td>
+        <td>1 Month Plan</td>
+        <td>10 May 2026</td>
+        <td>₹999</td>
+        <td class="paid">Paid</td>
+      </tr>
+
+      <tr>
+        <td>HG102</td>
+        <td>3 Months Plan</td>
+        <td>20 April 2026</td>
+        <td>₹2499</td>
+        <td class="paid">Paid</td>
+      </tr>
+
+      <tr>
+        <td>HG103</td>
+        <td>6 Months Plan</td>
+        <td>05 March 2026</td>
+        <td>₹4499</td>
+        <td class="pending">Pending</td>
+      </tr>
+
+      <tr>
+        <td>HG104</td>
+        <td>1 Year Plan</td>
+        <td>15 February 2026</td>
+        <td>₹7999</td>
+        <td class="failed">Failed</td>
+      </tr>
+
+    </table>
+
+    <a href="index.html" class="back-btn">⬅ Back to Home</a>
+
+  </div>
+
+</body>
+</html>
