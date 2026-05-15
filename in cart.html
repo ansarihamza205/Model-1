@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hamza Gym Cart</title>
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:Arial, sans-serif;
+    }
+
+    body{
+      background:#f4f4f4;
+    }
+
+    .container{
+      width:90%;
+      max-width:900px;
+      margin:40px auto;
+      background:white;
+      padding:20px;
+      border-radius:10px;
+      box-shadow:0 0 10px rgba(0,0,0,0.2);
+    }
+
+    h1{
+      text-align:center;
+      margin-bottom:30px;
+      color:#111;
+    }
+
+    .cart-item{
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      padding:20px;
+      border-bottom:1px solid #ddd;
+    }
+
+    .item-name{
+      font-size:20px;
+      font-weight:bold;
+    }
+
+    .price{
+      color:green;
+      font-size:18px;
+    }
+
+    .quantity-box{
+      display:flex;
+      align-items:center;
+      gap:10px;
+    }
+
+    button{
+      width:35px;
+      height:35px;
+      border:none;
+      background:#111;
+      color:white;
+      font-size:20px;
+      border-radius:5px;
+      cursor:pointer;
+    }
+
+    button:hover{
+      background:red;
+    }
+
+    .qty{
+      font-size:20px;
+      width:40px;
+      text-align:center;
+    }
+
+    .total{
+      text-align:right;
+      margin-top:30px;
+      font-size:24px;
+      font-weight:bold;
+    }
+
+    .checkout{
+      display:block;
+      width:200px;
+      margin:30px auto 0;
+      padding:15px;
+      background:red;
+      color:white;
+      border:none;
+      border-radius:8px;
+      font-size:18px;
+      cursor:pointer;
+    }
+
+    .checkout:hover{
+      background:#111;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+    <h1>Hamza Gym Cart Page</h1>
+
+    <div class="cart-item">
+      <div>
+        <div class="item-name">Gym Membership</div>
+        <div class="price">₹2000</div>
+      </div>
+
+      <div class="quantity-box">
+        <button onclick="decrease()">-</button>
+        <div class="qty" id="qty">1</div>
+        <button onclick="increase()">+</button>
+      </div>
+    </div>
+
+    <div class="total">
+      Total: ₹<span id="total">2000</span>
+    </div>
+
+    <button class="checkout">
+      Checkout
+    </button>
+  </div>
+
+  <script>
+    let quantity = 1;
+    let price = 2000;
+
+    function increase(){
+      quantity++;
+      document.getElementById("qty").innerHTML = quantity;
+      updateTotal();
+    }
+
+    function decrease(){
+      if(quantity > 1){
+        quantity--;
+        document.getElementById("qty").innerHTML = quantity;
+        updateTotal();
+      }
+    }
+
+    function updateTotal(){
+      document.getElementById("total").innerHTML = quantity * price;
+    }
+  </script>
+
+</body>
+</html>

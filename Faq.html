@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hamza Gym FAQ</title>
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:Arial, sans-serif;
+    }
+
+    body{
+      background:#f4f4f4;
+    }
+
+    .faq-container{
+      width:90%;
+      max-width:800px;
+      margin:50px auto;
+      background:white;
+      padding:30px;
+      border-radius:10px;
+      box-shadow:0 0 10px rgba(0,0,0,0.2);
+    }
+
+    h1{
+      text-align:center;
+      margin-bottom:30px;
+      color:#111;
+    }
+
+    .faq{
+      margin-bottom:15px;
+      border:1px solid #ddd;
+      border-radius:8px;
+      overflow:hidden;
+    }
+
+    .question{
+      background:#111;
+      color:white;
+      padding:15px;
+      cursor:pointer;
+      font-size:18px;
+      font-weight:bold;
+    }
+
+    .question:hover{
+      background:red;
+    }
+
+    .answer{
+      display:none;
+      padding:15px;
+      background:#fafafa;
+      font-size:16px;
+      line-height:1.6;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="faq-container">
+    <h1>Hamza Gym - FAQ</h1>
+
+    <div class="faq">
+      <div class="question" onclick="toggleAnswer(0)">
+        1. What are the gym timings?
+      </div>
+      <div class="answer">
+        Hamza Gym is open from 5:00 AM to 11:00 PM every day.
+      </div>
+    </div>
+
+    <div class="faq">
+      <div class="question" onclick="toggleAnswer(1)">
+        2. Do you provide personal trainers?
+      </div>
+      <div class="answer">
+        Yes, professional personal trainers are available for all members.
+      </div>
+    </div>
+
+    <div class="faq">
+      <div class="question" onclick="toggleAnswer(2)">
+        3. What is the membership fee?
+      </div>
+      <div class="answer">
+        Membership plans start from ₹2000 per month.
+      </div>
+    </div>
+
+    <div class="faq">
+      <div class="question" onclick="toggleAnswer(3)">
+        4. Is parking available?
+      </div>
+      <div class="answer">
+        Yes, free parking is available for all gym members.
+      </div>
+    </div>
+
+    <div class="faq">
+      <div class="question" onclick="toggleAnswer(4)">
+        5. Do you have diet plans?
+      </div>
+      <div class="answer">
+        Yes, customized diet and workout plans are provided.
+      </div>
+    </div>
+
+  </div>
+
+  <script>
+    function toggleAnswer(index){
+      let answers = document.getElementsByClassName("answer");
+
+      if(answers[index].style.display === "block"){
+        answers[index].style.display = "none";
+      }
+      else{
+        answers[index].style.display = "block";
+      }
+    }
+  </script>
+
+</body>
+</html>
